@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">EFIP</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Estados Financieros Personales</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Inicio</string>
+    <string name="menu_personal_information">Información Personal</string>
+    <string name="menu_capital_assets">Activos de capital</string>
+    <string name="menu_tools">Negocios</string>
+    <string name="menu_share">Ingresos</string>
+    <string name="menu_debts">Deudas a largo plazo</string>
+</resources>

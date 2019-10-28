@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.uan.efip.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_personal_information"
+        android:name="com.uan.efip.ui.personal_information.PersonalInformationFragment"
+        android:label="@string/menu_personal_information"
+        tools:layout="@layout/fragment_personal_information" />
+
+    <fragment
+        android:id="@+id/nav_capital_assets"
+        android:name="com.uan.efip.ui.capital_assets.CapitalAssetsFragment"
+        android:label="@string/menu_capital_assets"
+        tools:layout="@layout/fragment_capital_assets" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.uan.efip.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.uan.efip.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_debts"
+        android:name="com.uan.efip.ui.debts.DebtsFragment"
+        android:label="@string/menu_debts"
+        tools:layout="@layout/fragment_debts" />
+</navigation>

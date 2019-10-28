@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="166dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Nombre Completo:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="208dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Nombre"
+                android:textColorHighlight="@color/design_default_color_primary"
+                android:textColorLink="@color/design_default_color_primary_dark"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="201dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:inputType="date"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+            <TableLayout
+
+                android:id="@+id/tableLayout"
+                android:layout_width="354dp"
+                android:layout_height="375dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:stretchColumns="0,1,2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#000000"
+
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Activo"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="144dp"
+                        android:layout_height="33dp"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Cantidad"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Efectivo"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:id="@+id/editText14"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Cuentas por cobrar"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:id="@+id/editText10"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Deposito"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:id="@+id/editText6"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Muebles y enseres"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:id="@+id/editText7"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Joyas"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:id="@+id/editText8"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout2"
+                android:layout_width="354dp"
+                android:layout_height="375dp"
+                android:layout_marginTop="460dp"
+                android:gravity="center"
+                android:stretchColumns="0,1,2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#000000"
+
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Pasivo"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="144dp"
+                        android:layout_height="33dp"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Cantidad"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Gastos por pagar"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:id="@+id/editText17"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Conts por pagar"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:id="@+id/editText18"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Tarjetas de credito"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:id="@+id/editText47"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Pension alimentaria"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:id="@+id/editText76"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/background_light">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Otras deudas"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:id="@+id/editText49"
+                        android:layout_width="140dp"
+                        android:layout_height="63dp"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:text="0" />
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="191dp"
+                android:layout_height="21dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.716"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.888" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="166dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Fecha:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="70dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Saludo:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Activos corrientes"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pasivos corrientes"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tableLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
