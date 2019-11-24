@@ -20,7 +20,8 @@ class PersonalInformationFragment : Fragment() {
     ): View? {
         val t=inflater.inflate(R.layout.fragment_personal_information, container, false)
         val spinner = t.findViewById<Spinner>(R.id.spinner)
-        spinner?.adapter = ArrayAdapter(this.activity!!, R.layout.support_simple_spinner_dropdown_item, types) as SpinnerAdapter
+        spinner?.adapter =
+            ArrayAdapter(this.activity!!, R.layout.support_simple_spinner_dropdown_item, types)
         spinner?.onItemSelectedListener = object :AdapterView.OnItemSelectedListener{
             override fun onNothingSelected(parent: AdapterView<*>?) {
                 println("Error")

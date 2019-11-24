@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:id="@+id/radioGroup2"
+        android:id="@+id/radioGroup"
         android:layout_width="131dp"
         android:layout_height="253dp"
         android:layout_marginTop="8dp"
@@ -26,43 +26,43 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7">
 
         <RadioButton
-            android:id="@+id/radioButton7"
+            android:id="@+id/rbResidencia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Residencia" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/rbPlanRetiro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Plan de retiro" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/rbPropInmueble"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Propiedad inmueble" />
 
         <RadioButton
-            android:id="@+id/radioButton4"
+            android:id="@+id/rbIRA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="IRA" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/rbAcciones"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Acciones" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rbBanco"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Banco" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rbOtro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Otro instrumento / Negociable" />
@@ -77,7 +77,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <TextView
         android:id="@+id/textView9"
@@ -92,12 +92,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editTextDescActivo"
         android:layout_width="235dp"
         android:layout_height="54dp"
         android:layout_marginEnd="60dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -113,14 +113,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editTextBaseActivo"
         android:layout_width="237dp"
         android:layout_height="39dp"
         android:layout_marginTop="28dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescActivo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

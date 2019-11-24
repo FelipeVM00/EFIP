@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:id="@+id/radioGroup2"
+        android:id="@+id/radioGroup"
         android:layout_width="183dp"
         android:layout_height="128dp"
         android:layout_marginTop="16dp"
@@ -37,25 +37,25 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12">
 
         <RadioButton
-            android:id="@+id/radioButton7"
+            android:id="@+id/rbTrabajo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Trabajo" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/rbRenta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Renta" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/rbDividiendos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Dividiendos" />
 
         <RadioButton
-            android:id="@+id/radioButton8"
+            android:id="@+id/rbIntereses"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Intereses" />
@@ -71,7 +71,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <TextView
         android:id="@+id/textView22"
@@ -94,7 +94,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/editTextNombreIngreso"
         android:layout_width="214dp"
         android:layout_height="41dp"
         android:layout_marginStart="12dp"
@@ -106,7 +106,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <EditText
-        android:id="@+id/editText16"
+        android:id="@+id/editTextLugarIngreso"
         android:layout_width="214dp"
         android:layout_height="41dp"
         android:layout_marginTop="20dp"
@@ -115,10 +115,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.768"
         app:layout_constraintStart_toEndOf="@+id/textView23"
-        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNombreIngreso" />
 
     <EditText
-        android:id="@+id/editText19"
+        android:id="@+id/editTextIngresosMen"
         android:layout_width="214dp"
         android:layout_height="41dp"
         android:layout_marginTop="20dp"
@@ -127,6 +127,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toEndOf="@+id/textView24"
-        app:layout_constraintTop_toBottomOf="@+id/editText16" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLugarIngreso" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
-        android:id="@+id/radioGroup2"
+        android:id="@+id/radioGroup"
         android:layout_width="171dp"
         android:layout_height="101dp"
         android:layout_marginTop="8dp"
@@ -26,19 +26,19 @@
         app:layout_constraintTop_toBottomOf="@+id/textView11">
 
         <RadioButton
-            android:id="@+id/radioButton7"
+            android:id="@+id/rbPrestamoPersonal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Prestamo personal" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/rbPrestamoAuto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Prestamo de auto" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/rbPrestamoHipotecario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Prestamo hipotecario" />
@@ -55,7 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <TextView
         android:id="@+id/textView16"
@@ -69,7 +69,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <EditText
-        android:id="@+id/editText11"
+        android:id="@+id/editTextPagoMensual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -101,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toEndOf="@+id/textView17"
-        app:layout_constraintTop_toBottomOf="@+id/editText11" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPagoMensual" />
 
     <TextView
         android:id="@+id/textView18"
@@ -115,7 +115,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <EditText
-        android:id="@+id/editText13"
+        android:id="@+id/editTextBalanceActual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -137,7 +137,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <EditText
-        android:id="@+id/editText15"
+        android:id="@+id/editTextInteres"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
@@ -145,5 +145,5 @@
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toEndOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/editText13" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextBalanceActual" />
 </androidx.constraintlayout.widget.ConstraintLayout>
